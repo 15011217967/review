@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //一题
+    // let arr = [1, 2, 3, 4, 5]//将4和5替换成a, b, c三项，并打印其值？
+    // arr.splice(3,2,"a","b","c");
+    // alert(arr)
+
+    // 二题
+    let arr = [1, 2, 3, -1 ,-2,-18, 18, 200, 45, 7];//在arr中找出大于18的第一个值，并赋值给var a;，a并打印
+    arr.find((item)=>{
+        if(item>18){
+            return item;   
+        }
+    })
+    console.log(arr)
+    </script>
+</body>
+</html>

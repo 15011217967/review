@@ -14,13 +14,248 @@
     // alert(arr)
 
     // 二题
-    let arr = [1, 2, 3, -1 ,-2,-18, 18, 200, 45, 7];//在arr中找出大于18的第一个值，并赋值给var a;，a并打印
-    arr.find((item)=>{
-        if(item>18){
-            return item;   
+    // let arr = [1, 2, 3, -1 ,-2,-18, 18, 200, 45, 7];//在arr中找出大于18的第一个值，并赋值给var a;，a并打印
+    // arr.find((item)=>{
+    //     if(item>18){
+    //         return item;   
+    //     }
+    // })
+    // console.log(arr)
+
+    // 三题
+    //1.创建一个字符串str，值为"66,1,0,3,-1,8,88,66"，
+    //2.创建一个字符串str，值为"66&1&0&3&-1&8&88&66"，并打印其值？（尽量使用数组方法）!
+    // let arr = [66,1,0,3,-1,8,88,166];
+    // var str = arr.join(',');
+    // var str2 = arr.join('&');
+    // console.log(str);
+    // console.log(str2);
+
+    // 四题
+    // let arr = [1, 2, 3];//将a, b, c逐个添加到arr数组开头，并打印其值？（尽量使用数组方法）!
+    // arr.unshift('a','b','c');
+    // console.log(arr);
+
+    // 五题
+    // let str = 'abcdefg';//使用slice方法，截取str中的def字符？（尽量使用字符串方法）
+    // var arr = str.slice(3,6);//从第几位开始到第几位结束不包括自己
+    // console.log(arr)
+
+    // 六题
+    //let arr = [1, 2, 3, -1 ,-2,-18, 18, 200, 45, 7]//在arr中找出大于18的第一个值的下标，并赋值给var aIndex;，并打印aIndex ?（尽量使用数组方法）!
+    //(1)
+    // var aIndex = arr.findIndex((el)=>{
+    //     if(el>18){
+    //         return el;
+    //     }
+    // })
+    // console.log(aIndex);
+    // (2)
+    // var aIndex = arr.find((el)=>{
+    //     if(el>18){
+    //         return el;
+    //     }
+    // })
+    // console.log(arr.indexOf(aIndex));
+    //(3)
+    // var aIndex=[];  //有问题
+    // arr.forEach(function(el){
+    //     if(el>18){
+            
+    //         aIndex.push(el)
+    //         aIndex.splice(1,1);
+    //     }
+    // })
+    // console.log(arr.indexOf(aIndex));
+    
+    // 七题
+    //判断arr中是否有大于18的值，如果有var a = true，否则false，并打印a ?（尽量使用数组方法）!
+    // let arr = [1, 2, 3, -1 ,-2,-18, 18, 200, 45, 7];
+    // var a = true;
+    // arr.map((item)=>{
+    //     if(item>18){
+    //         a=true;
+    //         console.log(a)
+    //     }else{
+    //         a=false;
+    //         console.log(a)
+    //     }
+    // })
+
+    //八题
+    //判断arr是否是数组，并赋值给var isArr;，并打印isArr ?（尽量使用数组方法）!
+    // let arr = [1, 2, 3, -1 ,-2,-18, 18, 200, 45, 7];
+    //(1)
+    //console.log(Array.isArray(arr));
+    //(2)
+    //console.log(arr instanceof Array)
+    //(3)
+    //console.log(arr.constructor === Array)
+
+    // 九题
+    //判断arr中的值，是否全部小于200，如果有var a = true，否则false，并打印a ?（尽量使用数组方法）!
+    // let arr = [1, 2, 3, -1 ,-2,-18, 18, 200, 45, 7];
+    // var a = true;
+    // arr.map((item)=>{
+    //     if(item<200){
+    //         a=true;
+    //         console.log(a)
+    //     }else{
+    //         a=false;
+    //         console.log(a)
+    //     }
+    // })
+
+    // 十题
+    // let arr = [1, 2, 3, 4, 5] //删除值为3，4的项，并打印其值？（尽量使用数组方法）!
+    // var str = arr.splice(2,2); //删除开始位置 后面删除几位
+    // console.log(str)
+
+    // 十一题
+    // let str = 'acb123cba321bca231ccc331v';//分别找到第一个3的位置和最后一个c的位置？（尽量使用字符串方法）
+    // var a = str.indexOf(3);
+    // var b = str.lastIndexOf("c");
+    // console.log(a)
+    // console.log(b)
+
+    // let arr = [1, 2, 3, 4, 5]//将4和5替换成a, b, c三项，并打印其值？（尽量使用数组方法）!
+    // let str = arr.splice(3,2,'a','b','c');
+    // console.log(arr)
+    // console.log(str)
+    //let arr = [1, 2, 3, 4, 5, 6]//创建一个新数组arrNew，里面的值为[6, 5, 4, 3, 2, 1]， 并打印其值？（尽量使用数组方法）!
+    // (1)
+    // var arrNew = arr.reverse();
+    // console.log(arrNew);
+    // (2)
+    // var arrNew = arr.sort((a,b)=>{
+    //     return b-a;
+    // })
+    // console.log(arrNew);
+    
+    // 十二题
+    // let str = 'ab&def&cc';//创建一个新数组arrNew，值为[ab, def, cc]？（尽量使用字符串方法）
+    // let arrNew = str.split('&').join(',')
+    // console.log(arrNew)
+    
+    // 十三题
+    // let arr = [44, 0, -2, 33, 7];//创建一个新数组arrNew，里面的值为arr各项的2倍，并打印其值？（尽量使用数组方法）!
+    // let arrNew = arr.map((item)=>{
+    //     return item*2;
+    // })
+    // console.log(arrNew);
+
+    //十四题
+    // let str = 'abcdefg';//使用substring方法，截取str中的def字符？（尽量使用字符串方法）
+    // let arr = str.substring(3,6);//从第几个开始截取 到第几位不包括本身
+    // console.log(arr)
+
+    // 十五题
+    //let arr = [66,1,0,3,-1,8,88,166];//降序排列arr的各项值，并打印其值？（尽量使用数组方法）!
+    // (1)
+    // arr.sort((a,b)=>{
+    //     return a-b;
+    // })
+    // console.log(arr)
+    // (2)
+    // for (let i = 0; i < arr.length-1; i++) {
+    //     for (let j = 0; j < arr.length-1-i; j++) {
+    //         if(arr[j]>arr[j+1]){
+    //             var temp = arr[j];
+    //             arr[j] = arr[j+1];
+    //             arr[j+1] = temp;
+    //         }   
+    //     }
+    // }
+    // console.log(arr)
+
+    // 十六题
+    // let arr = [1, 2, 3, 4, 5] //在3和4中间插入a, b, c三项，并打印其值？（尽量使用数组方法）!
+    // arr.splice(2,2,'a','b','c');
+    // console.log(arr)
+
+    //十七题
+    // let arr = [1, 2, 3]//将a, b, c逐个添加到arr数组末尾，并打印其值？（尽量使用数组方法）!
+    // arr.push('a','b','c');
+    // console.log(arr)
+
+    //十八题
+    // let arr = [0, 1, 2, 3, 4, 5]//删除arr中值为0, 1, 2的三项，并打印其值？（尽量使用数组方法）!
+    // arr.splice(0,3);
+    // console.log(arr)
+
+    // 十九题
+    // let arr = [0, 1, 2, 3, 4, 5]//删除arr中值为为3, 4, 5的三项，并打印其值？（尽量使用数组方法）!
+    // arr.splice(3,3) 
+    // console.log(arr)
+
+    // 二十题
+    // let str = 'ABC';//分别将str转成小写，将str2转成大写？（尽量使用字符串方法）
+    // let str2 = 'bcd';
+    // let a = str.toLocaleLowerCase();
+    // let b = str2.toLocaleUpperCase();
+    // console.log(a)
+    // console.log(b);
+
+    // 二十一题
+    // let str = 'abcdefg';//使用substr方法，截取str中的def字符？（尽量使用字符串方法）
+    // var a = str.substr(3,3); //从第一位开始向后 截取几位
+    // console.log(a)
+
+    // 二十二题
+    //var str = ' Hello World! ';//删除str两端的空白符？（尽量使用字符串方法）
+    // (1)
+    // var a = str.trim();
+    // console.log(a)
+    // (2)
+    // a = str.replace(/\s+/g,"");
+    // console.log(a)
+
+    // 二十三题
+    // let str = 'abcdefg';//如何取到str中c这个值？（尽量使用字符串方法）
+    // let a = str.charAt(2);
+    // console.log(a)
+    
+    // 二十四题
+    // let arr = [1, 2, 3];//合并数组arr和arr2，并打印其值？（尽量使用数组方法）!
+    // let arr2 = [3, 4, 5];
+    // (1)
+    // let str =[...arr,...arr2];
+    // (2)
+    // let str = arr.concat(arr2);
+    // (3)
+    // let str=[];
+    // str.push(...arr,...arr2);
+    // console.log(str)
+
+    // 二十五题
+    // let str = '0123456789';//str中7对应的Unicode 编码是多少？（尽量使用字符串方法）
+    // var a = str.charCodeAt(7);
+    // console.log(a)
+
+    //二十六题
+    //使用数组slice方法,将值为3和4的项从arr中截取出来，并打印截取的值和arr？（尽量使用数组方法）!
+    // let arr = [1, 2, 3, 4, 5, 7];
+    // let str = arr.splice(2,2);
+    // console.log(arr)
+    
+    //二十七题
+    //将str中数字字符串的项（如：123，321），装进arr数组中？（尽量使用字符串方法）
+    // let str = 'acb123cba321bca231ccc331v';
+    // // let num = str.match(/[^\d]+/g); // ["acb", "cba", "bca", "ccc", "v"]
+    // // let num =str.match(/\d+/g);// ["123", "321", "231", "331"]
+    // let num = str.match(/[^a-z]+/g);// ["123", "321", "231", "331"]
+    // console.log(num);
+
+    //二十八题
+    //在arr中找出大于18的值，并将值装进var arrNew中;，并打印 ?（尽量使用数组方法）!
+    let arr = [1, 2, 3, -1 ,-2,-18, 18, 200, 45, 7];
+    var arrNew=[];
+    arr.map(function(el){
+        if(el>18){
+            arrNew.push(el)
         }
     })
-    console.log(arr)
+    console.log(arrNew)
     </script>
 </body>
 </html>

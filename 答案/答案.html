@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //1 判断arr是否是数组，并赋值给var isArr;，并打印isArr ?（尽量使用数组方法）!
+    // let arr = [1, 2, 3, -1 ,-2,-18, 18, 200, 45, 7];
+    // console.log(arr.isarr(arr))
+    // console.log(arr.constructor === arr)
+    // console.log(arr instanceof arr);
+
+
+    //2 合并数组arr和arr2，并打印其值？（尽量使用数组方法）!
+    // let arr = [1, 2, 3];
+    // let arr2 = [3, 4, 5];
+    // // let str = arr.concat(arr2);
+    // let str = [...arr,...arr2];
+    // console.log(str)
+
+
+    //3 分别将str转成小写，将str2转成大写？（尽量使用字符串方法）
+    // let str = 'ABC';
+    // let str2 = 'abc';
+    // console.log(str.toLocaleLowerCase()) 
+    // console.log(str2.toLocaleUpperCase())
+
+    //4 判断arr中的值，是否全部小于200，如果有var a = true，否则false，并打印a ?（尽量使用数组方法）!
+    // let arr = [1, 2, 3, -1 ,-2,-18, 18, 200, 45, 7];
+    // let a = arr.every((item)=>{return item<200}) //false  返回布尔值，全部元素都符合才返回true，否则false；
+    // console.log(a); //false
+
+    //5 在3和4中间插入a, b, c三项，并打印其值？（尽量使用数组方法）!
+    // let arr = [1, 2, 3, 4, 5];
+    // let str = arr.splice(2,2,'a','b','c')
+    // console.log(arr)  // [1, 2, "a", "b", "c", 5]
+
+
+    //6 创建一个新数组arrNew，值为[ab, def, cc]？（尽量使用字符串方法）
+    // let str = 'ab&def&cc';
+    // let arrNew = str.split('&'); //字符串切割
+    // console.log(arrNew)
+
+    //7str中7对应的Unicode 编码是多少？（尽量使用字符串方法）
+    // let str = '0123456789';
+    // console.log(str.charCodeAt(7)) 
+
+    //8 如何取到str中c这个值？（尽量使用字符串方法）
+    // let str = 'abcdefg';
+    // console.log(str.charAt(2))
+
+    // //9 降序排列arr的各项值，并打印其值？（尽量使用数组方法）!
+    // let arr = [66,1,0,3,-1,8,88,166];
+    // // arr.sort((a,b)=>{return a-b}); 
+    //冒泡排序
+    // for (let i = 0; i < arr.length-1; i++) {
+    //   for (let j = 0; j < arr.length-1-i; j++) {
+    //       if(arr[j]>arr[j+1]){
+    //         var temp = arr[j];
+    //             arr[j] = arr[j+1];
+    //             arr[j+1] = temp;
+    //       }   
+    //   }    
+    // }
+    // console.log(arr)
+
+    //10.分别找到第一个3的位置和最后一个c的位置？（尽量使用字符串方法）
+    // let str = 'acb123cba321bca231ccc331v';
+    // let a = str.indexOf(3);
+    // let b = str.lastIndexOf("c");
+    // console.log(a,b); //5,20
+
+    //11.将str中数字字符串的项（如：123，321），装进arr数组中？（尽量使用字符串方法）
+    // let str = 'acb123cba321bca231ccc331v';
+    // let arr = str.match(/\d+/g); //查找一个或多个
+    // console.log(arr) //["123", "321", "231", "331"]
+
+    //12创建一个新数组arrNew，里面的值为arr各项的2倍，并打印其值？（尽量使用数组方法）!
+    // let arr = [44, 0, -2, 33, 7];
+    // let a = arr.map((item)=>{
+    //     return item*2
+    // })
+    // console.log(a)
+
+
+    //13 删除arr中值为0, 1, 2的三项，并打印其值？（尽量使用数组方法）!
+    // let arr = [0, 1, 2, 3, 4, 5];
+    // let a = arr.splice(0,3);
+    // console.log(arr) //3, 4, 5
+    // console.log(a) //0,1,2
+
+
+    //13 在arr中找出大于18的第一个值，并赋值给var a;，a并打印 ?（尽量使用数组方法）!
+    // let arr = [1, 2, 3, -1 ,-2,-18, 18, 200, 45, 7];
+    // let a = arr.find((item)=>{return item>18});
+    // console.log(a) //200
+    
+    //14 删除值为3，4的项，并打印其值？（尽量使用数组方法）!
+    // let arr = [1, 2, 3, 4, 5];
+    // let a = arr.splice(2,2);
+    // console.log(a)
+    
+    //15 1.创建一个字符串str，值为"66,1,0,3,-1,8,88,66"，
+    //   2.创建一个字符串str，值为"66&1&0&3&-1&8&88&66"，并打印其值？（尽量使用数组方法）!
+    // let arr = [66,1,0,3,-1,8,88,166];
+    // let a = arr.join(',');
+    // let b = arr.join('&');
+    // console.log(a)
+    // console.log(b)
+
+    //17，创建一个新数组arrNew，里面的值为[6, 5, 4, 3, 2, 1]， 并打印其值？（尽量使用数组方法）!
+    // let arr = [1, 2, 3, 4, 5, 6];
+    // // let arrNew = arr.reverse();
+    // let arrNew = arr.sort((a,b)=>b-a);
+    // console.log(arrNew)
+
+    //18，删除str两端的空白符？（尽量使用字符串方法）
+    // var str = ' Hello World! ';
+    // console.log(str.trim());
+    // var reg = /^\s+|\s+|\s+$/g;  //去除左右中间空格
+    // var reg = /^\s+|\s+$/g; //去除左右
+    // let a = str.replace(reg,'');
+    // let a = str.replace(/^\s+|\s+$/g,''); 
+    // console.log(a)
+
+    // 19，删除arr中值为为3, 4, 5的三项，并打印其值？（尽量使用数组方法）!
+    // let arr = [0, 1, 2, 3, 4, 5];
+    // console.log(arr.splice(3,3));
+    
+    //20.使用substring方法，截取str中的def字符？（尽量使用字符串方法）
+    // let str = 'abcdefg';
+    // console.log(str.substring(3,6)) //开始截取到结束位置
+
+    //21将4和5替换成a, b, c三项，并打印其值？（尽量使用数组方法）!
+    // let arr = [1, 2, 3, 4, 5];
+    // arr.splice(3,3,'a','b','c') //4,5
+    // console.log(arr);
+
+    // 22.判断arr中是否有大于18的值，如果有var a = true，否则false，并打印a ?（尽量使用数组方法）!
+    // let arr = [1, 2, 3, -1 ,-2,-18, 18, 200, 45, 7];
+    // let a = arr.some((item)=>{return item>18}); //true 返回布尔值，有一项符合即返回true；
+    // console.log(a)
+
+    //23.在arr中找出大于18的第一个值的下标，并赋值给var aIndex;，并打印aIndex ?（尽量使用数组方法）!
+    // let arr = [1, 2, 3, -1 ,-2,-18, 18, 200, 45, 7];
+    // var aIndex = arr.find((item)=>item>18); //200
+    // console.log(arr.indexOf(aIndex)) //7
+
+    // var aIndex =arr.findIndex((item)=>item>18);
+    // console.log(aIndex) //7
+
+    // var aIndex = [];
+    // arr.forEach((item)=>{
+    //     if(item>18){
+    //         aIndex.push(item);
+    //         console.log(aIndex[0]) //200
+    //     }
+    // })
+    // console.log(arr.indexOf(aIndex[0]))//7
+
+    // 24.，使用substr方法，截取str中的def字符？（尽量使用字符串方法）
+    // let str = 'abcdefg';
+    // console.log(str.substr(3,3)); //从那位开始截取  截取几位
+
+    // 25.使用slice方法，截取str中的def字符？（尽量使用字符串方法）
+    // let str = 'abcdefg';
+    // console.log(str.slice(3,6)) //从开始位置截取 到结束位置位 不包括最后一位
+
+    //26，在arr中找出大于18的值，并将值装进var arrNew中;，并打印 ?（尽量使用数组方法）!
+    // let arr = [1, 2, 3, -1 ,-2,-18, 18, 200, 45, 7];
+    // var arrNew=[];
+    // arr.map((item)=>{
+    //     if(item>18){
+    //         arrNew.push(item)
+    //     }
+    // })
+    // console.log(arrNew)
+
+
+    //27，将订单号这串数字，替换成 <span>20190107123265</span>（尽量使用字符串方法）
+    // let str = '订单号：20190107123265 操作人：张三';    
+    // var res = /\d{9,}/g;
+    // var a = str.replace(res,function(item){
+    //     return `<span>${item}</span>`
+    // });
+    // console.log(a)
+
+    //28 使用数组slice方法,将值为3和4的项从arr中截取出来，并打印截取的值和arr？（尽量使用数组方法）!
+    // let arr = [1, 2, 3, 4, 5, 7];
+    // console.log(arr.slice(2,4)) //从开始位置 截取到结束位置 不包括最后一位
+
+    // 29 将a, b, c逐个添加到arr数组末尾，并打印其值？（尽量使用数组方法）!
+    // let arr = [1, 2, 3];
+    // arr.push('a','b','c')
+    // console.log(arr);
+
+    // 30 将a, b, c逐个添加到arr数组开头，并打印其值？（尽量使用数组方法）!
+    // let arr = [1, 2, 3];
+    // arr.unshift('a','b','c');
+    // console.log(arr)
+    </script>   
+</body>
+</html>

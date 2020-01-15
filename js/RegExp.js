@@ -8,9 +8,9 @@ let reg = [
   // 4./[^a-h]/g;
   "let str = 'Is0 this1 all2 there3 is4?';使用match方法，匹配出str中除了字母a-字母h之间的值，赋值给arr并打印？",
   // 5./[0-9]/g
-  "let str = 'Is0 this1 all2 there3 is4?';使用match方法，匹配出str中除了字母a-字母h之间的值，赋值给arr并打印？",
+  "let str = 'Is0 this1 all2 there3 is4?';使用match方法，匹配出str中0-9之间的值，赋值给arr并打印？",
   // 6./[^0-9]/g
-  "let str = 'Is0 this1 all2 there3 is4?';使用match方法，匹配出str中除了字母a-字母h之间的值，赋值给arr并打印？",
+  "let str = 'Is0 this1 all2 there3 is4?';使用match方法，匹配出str中除了0-9之间的值，赋值给arr并打印？",
 
   // 7.i表示可以匹配出任意值
   "let str = 'Is0 th_is1 all2 the_re3 is4?';使用match方法，匹配出第一位是i，第二位任意字符的值，赋值给arr并打印？",

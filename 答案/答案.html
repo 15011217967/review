@@ -7,6 +7,8 @@
     <title>Document</title>
 </head>
 <body>
+        <input type="text" id="txt">
+        <span>3.2折</span>
     <script>
     //1 判断arr是否是数组，并赋值给var isArr;，并打印isArr ?（尽量使用数组方法）!
     // let arr = [1, 2, 3, -1 ,-2,-18, 18, 200, 45, 7];
@@ -227,36 +229,233 @@
     // let arr =str.match(res,'');
     // console.log(arr) //["I", "s", "0", " ", "t", "i", "s", "1", " ", "l", "l", "2", " ", "t", "r", "3", " ", "i", "s", "4", "?"]
    
-    //35 使用match方法，匹配出str中除了字母a-字母h之间的值，赋值给arr并打印？",
+    //35 使用match方法，匹配出str中0-9之间的值，赋值给arr并打印？",
     // let str = 'Is0 this1 all2 there3 is4?';
     // let res = /[0-9]/g;
     // let arr = str.match(res,'');
     // console.log(arr)
 
-    //36 使用match方法，匹配出str中除了字母a-字母h之间的值，赋值给arr并打印？",
-    let str = 'Is0 this1 all2 there3 is4?';
-    let res = /[^0-9]/g;
-    let arr = str.match(res,'');
-    console.log(arr);
+    //36 使用match方法，匹配出str中除了0-9之间的值，赋值给arr并打印？",
+    // let str = 'Is0 this1 all2 there3 is4?';
+    // let res = /[^0-9]/g;
+    // let arr = str.match(res,'');
+    // console.log(arr);
+
+    // 37 使用match方法，匹配出第一位是i，第二位任意字符的值，赋值给arr并打印？",
+    // let str = 'Is0 th_is1 all2 the_re3 is4?';
+    // let res = /i./;
+    // let arr = str.match(res,'');
+    // console.log(arr);
+
+    // 38 使用match方法，匹配出第一位是i，第二位为单词字符的值，赋值给arr并打印？",
+    // let str = 'Is0 thi_s1 all2 there3 is4?';
+    // let res = /i\w/;
+    // let arr = str.match(res,'');
+    // console.log(arr);
+
+    //39 使用match方法，匹配出str中非单词字符，赋值给arr并打印？",
+    // let str = 'Is0 this1 all2 there3 @ is4?';
+    // let res = /\W/g;
+    // let arr = str.match(res,'');
+    // console.log(arr)  //[" ", " ", " ", " ", "@", " ", "?"]
+    
+    //40 使用match方法，匹配出第一位是s，第二位为数字的值，赋值给arr并打印？",
+    // let str = 'Is0 this1 all2 there3 is4?';
+    // let res = /s\d/;
+    // let arr = str.match(res,'');
+    // console.log(arr) 
+
+    //41 使用match方法，匹配出str中非数字字符的值，赋值给arr并打印？",
+    // let str = 'Is0 this1 all2 there3 is4?';
+    // let res = /\D/g;
+    // let arr = str.match(res,'');
+    // console.log(arr) 
+
+    //42 使用match方法，匹配出str中的所有空格，赋值给arr并打印？",
+    // let str = 'Is0 this1 all2 there3 is4?';
+    // let res = /\s+/g;
+    // let arr = str.match(res,'');
+    // console.log(arr) 
+
+    //43 使用match方法，匹配出str中的所有非空格，赋值给arr并打印？",
+    // let str = 'Is0 this1 all2 there3 is4?';
+    // let res = /\S/g;
+    // let arr = str.match(res,'');
+    // console.log(arr) 
+
+    //44 使用match方法，匹配出str中单词的开头和结尾是否含有大写I字符的值，赋值给arr并打印？",
+    // let str = 'Is0 this1 all2 there3 is4?';
+    // let res = /\bI/g;
+    // let arr = str.match(res,'');
+    // console.log(arr) 
+
+    //45 使用match方法，匹配出str中单词的中间位置是否含有i字符的值，赋值给arr并打印？",
+    // let str = 'Is0 this1 all2 there3 is4?';
+    // let res = /\bi/g;
+    // let arr = str.match(res,'');
+    // console.log(arr) 
 
 
+    //46 使用match方法，匹配出str中，至少一位单词字符的值，赋值给arr并打印？",
+    // let str = 'zh_sdfd521sdfg6zdzhhhhhh09wer@126.com';
+    // // let res = /[\w]+\@(?:[\w]+\.)+[\w]{3}$/;
+    // // let res= /^[0-9a-zA-Z_-]+\@(?:[0-9a-zA-Z_-]+\.)+[a-zA-Z]{2,6}$/;
+    // // let res= /[\w]+\@[\w]+\.[\w]{3}/;
+    // // let res = /\w+/g;
+    // let arr = str.match(res,'');
+    // console.log(arr) 
 
 
+    //47 使用match方法，匹配出str中，第一个字母是z，后面紧跟零个h或多个h的值，赋值给arr并打印？"
+    // let str = 'zh_sdfd521sdfg6zdzhhhhhh09wer@126.com';
+    // let res = /zh*/g;
+    // let arr = str.match(res,'');
+    // console.log(arr) 
 
-    //37 使用match方法，匹配出正确的手机号，赋值给arr并打印？
-    // let str = 'zheNg ze 1881080aaaa da shi 15011217967 N n 11012123656n?';
-    // let res = /1[1-9]\d{9}/g;
+
+    //48 使用match方法，匹配出str中，第一个字母是z，后面紧跟零个h或一个h的值，赋值给arr并打印？",
+    // let str = 'zh_sdfd521sdfg6zdzhhhhhh09wer@126.com';
+    // let res = /zh?/g;
+    // let arr = str.match(res,'');
+    // console.log(arr)  //["zh", "z", "zh"]
+
+
+    //49 使用match方法，匹配出str中，第一个字母是z，后面紧跟2个h的值，赋值给arr并打印？",
+    // let str = 'zh_sdfd521sdfg6zdzhhhhhh09wer@126.com';
+    // let res = /zh{2}/g;
+    // let arr = str.match(res,'');
+    // console.log(arr)  //["zhh"]
+
+
+    //50 使用match方法，匹配出str中，第一个字母是z，后面紧跟3个到5个之间h的值，赋值给arr并打印？",
+    // let str = 'zhhh_sdfd521sdfg6zdzhhhhhh09wer@126.com';
+    // let res = /zh{3,5}/g;
     // let arr = str.match(res,'');
     // console.log(arr)
-   
-    //37 使用match方法，匹配出str中，第一个字母是z，后面紧跟零个h或多个h的值，赋值给arr并打印？
+
+
+    //51 使用match方法，匹配出str中，第一个字母是z，后面紧跟3个以上h的值，赋值给arr并打印？",
     // let str = 'zh_sdfd521sdfg6zdzhhhhhh09wer@126.com';
-    // let res = 
+    // let res = /zh{3,}/g;
+    // let arr = str.match(res,'');
+    // console.log(arr)
+
+    //52使用match方法，匹配出str中，以com结尾的值，赋值给arr并打印？",
+    // let str = 'zh_sdfd521sdfg6zdzhhhhhh09wer@126.com';
+    // // let res = /[\w]{3}$/g;
+    // let res = /\w+$/g;
+    // let arr = str.match(res,'');
+    // console.log(arr) //com
+
+    //53 使用match方法，匹配出str中，以zh开头的值，赋值给arr并打印？",
+    // let str = 'zh_sdfd521sdfg6zdzhhhhhh09wer@126.com';
+    // let res = /^zh/g;
+    // let arr = str.match(res,'');
+    // console.log(arr)
+
+
+  /*  // 前瞻：
+    exp1(?=exp2) 查找exp2前面的exp1
+    // 后顾：
+    (?<=exp2)exp1 查找exp2后面的exp1
+    // 负前瞻：
+    exp1(?!exp2) 查找后面不是exp2的exp1
+    // 负后顾：
+    (?<!exp2)exp1 查找前面不是exp2的exp1
+*/
+    
+    //54 使用match方法，匹配出str中的字符，后面紧跟着是.html的值，赋值给arr并打印？",
+    // let str = 'http://wap.dev.gomegj.com/yf/repairsubmit.html'; 
+    // let a = str.replace( /\w+(?=.html)/g,'c') //将后面不是 .dev的单词全部替换为c 
+    // console.log(a) //http://wap.dev.gomegj.com/yf/c.html // repairsubmit替换为c
+    
+    // let res = /\w+(?=.html)/g;  
+    // let arr = str.match(res,'');
+    // console.log(arr) //["repairsubmit"]
+
+    //55 使用match方法，匹配出str中的字符，后面没有紧跟着是.html的值，赋值给arr并打印？",
+    // let str = 'http://wap.dev.gomegj.com/yf/repairsubmit.html';
+    
+    // let a = str.replace( /\w+(?! http)/g,'12') //将后面不是 .dev的单词全部替换为c 
+    // console.log(a)
+    // let res = /\w+(?! .html)/g;  
+    // let arr = str.match(res,'');
+    // console.log(arr) //["http", "wap", "dev", "gomegj", "com", "yf", "repairsubmit", "html"]
+    
+    //56 使用match方法，匹配出正确的手机号，赋值给arr并打印？",
+    // let str = 'zheNg ze 1881080aaaa da shi 15011217967 N n 11012123656n?';
+    // let res = /1[3-9]\d{9}/g;  
+    // let arr = str.match(res,'');
+    // console.log(arr)
+
+
+    //57 使用match方法，匹配出正确的邮箱，赋值给arr并打印？",
+    // let str = 'zkht-zhangmeng_kjhaskdjh.asdjh@gis_gome+inc-com.cn';
+    // let res = /(\w+[-+_.]+\w+)+\@\w+([-+_.]+\w+)+/g;
+    // let arr = str.match(res,'');
+    // console.log(arr)
+
+    //58使用match方法，匹配出html的名称repair_su+b-mit，这一坨，赋值给arr并打印？",
+    // let str = 'http://wap.dev.gomegj.com/yf/repair_su+b-mit.html';
+    // let res = /\w+([+-.]*\w+)*(?=.html)/g;  //不太会
+    // let arr = str.match(res,'');
+    // console.log(arr)
+
+    //59 使用正则表达式，去除str的首尾空格？",
+    // let str = '  qu diao qian hou kongge ?   ';
+    // let res =/^\s+|\s+$/g;  
+    // let arr = str.replace(res,'');
+    // console.log(arr)
+
+    //60 使用match方法，匹配出str中的所有汉字，赋值给arr并打印？",
+    // let str = '123!!@#三尺sdsdf&*@!长剑 斩不断345相思情缠！123123fyf%';
+    // let res = /([\u4E00-\u9FA5]+)/g
+    // let arr = str.match(res,'');
+    // console.log(arr)  //["三尺", "长剑", "斩不断", "相思情缠"]
+
+    var txt = document.getElementById('txt');
+        txt.style.border = '1px solid #ccc';
+    //61 写一个input输入框，输入框中匹配正确的折扣，如3.2折，如果输入不正确的折扣，input边框变成红色，值正确时红色边框消失？",
+    // document.onclick=function(){
+    //     let res =/^[0-9](\.\d)?$/;
+    //     if(txt.value.match(res,'')){
+                // txt.style.border = '1px solid red'
+    //         alert('输入正确！')
+    //     }else{
+                // txt.style.border = '1px solid #ccc';
+    //         alert('输入有误！')
+    //     }
+        
+    // }
+
+    // 62 写一个input输入框，输入框中匹配数字或保留小数点后两位的数字；如：232.32，17.3，7858，
+    //如果输入不正确，input边框变成红色，值正确时红色边框消失？",
+    // document.onclick=function(){
+    //     res = /^\d+(\.\d{1,2})$/g;
+    //     if(txt.value.match(res,'')){
+    //         txt.style.border = '1px solid red'
+    //         alert('输入正确');
+    //     }else{
+    //         txt.style.border = '1px solid #ccc';
+    //         alert('输入有误！')
+            
+    //     }
+    // }
+        
+    //63写一个input输入框，输入框中匹配汉字和字母，中间可以有空格；
+    //如：zh 张三 com，如果输入不正确，input边框变成红色，值正确时红色边框消失？",
+    document.onclick=function(){
+        res = /[\u4E00-\u9FA5a-zA-Z\s]/g;
+        if(txt.value.match(res,'')){
+            txt.style.border = '1px solid red'
+            alert('输入正确');
+        }else{
+            txt.style.border = '1px solid #ccc';
+            alert('输入有误！')
+        }
+    }
+
+   </script> 
    
-   
-   
-   
-   
-   </script>   
 </body>
 </html>

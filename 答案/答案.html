@@ -8,7 +8,6 @@
 </head>
 <body>
         <input type="text" id="txt">
-        <span>3.2折</span>
     <script>
     //1 判断arr是否是数组，并赋值给var isArr;，并打印isArr ?（尽量使用数组方法）!
     // let arr = [1, 2, 3, -1 ,-2,-18, 18, 200, 45, 7];
@@ -416,7 +415,7 @@
     var txt = document.getElementById('txt');
         txt.style.border = '1px solid #ccc';
     //61 写一个input输入框，输入框中匹配正确的折扣，如3.2折，如果输入不正确的折扣，input边框变成红色，值正确时红色边框消失？",
-    // document.onclick=function(){
+    // txt.onchange=function(){
     //     let res =/^[0-9](\.\d)?$/;
     //     if(txt.value.match(res,'')){
                 // txt.style.border = '1px solid red'
@@ -430,7 +429,7 @@
 
     // 62 写一个input输入框，输入框中匹配数字或保留小数点后两位的数字；如：232.32，17.3，7858，
     //如果输入不正确，input边框变成红色，值正确时红色边框消失？",
-    // document.onclick=function(){
+    // txt.onchange=function(){
     //     res = /^\d+(\.\d{1,2})$/g;
     //     if(txt.value.match(res,'')){
     //         txt.style.border = '1px solid red'
@@ -444,7 +443,7 @@
         
     //63写一个input输入框，输入框中匹配汉字和字母，中间可以有空格；
     //如：zh 张三 com，如果输入不正确，input边框变成红色，值正确时红色边框消失？",
-    document.onclick=function(){
+    txt.onchange=function(){
         res = /[\u4E00-\u9FA5a-zA-Z\s]/g;
         if(txt.value.match(res,'')){
             txt.style.border = '1px solid red'
